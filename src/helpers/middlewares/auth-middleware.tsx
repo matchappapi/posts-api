@@ -8,7 +8,7 @@ import usersMock from '../mocks/users.mock';
 
 export default async (req: RequestWithUser, res: Response, next: NextFunction) => {
   const cookies = req.cookies;
-  console.log('REQ COOKIE POSTS ===>>> ', req.cookies)
+  console.log('REQ COOKIE POSTS ===>>> ', cookies)
   if (cookies && cookies.Authorization) {
     const secret:string = process.env.JWT_SECRET || 'Lucas';
     try {
