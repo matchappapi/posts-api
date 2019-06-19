@@ -4,7 +4,7 @@ interface TokenData {
 }
 
 interface DataStoredInToken {
-  _id: string;
+  id: string;
 }
 
 export { TokenData as default, DataStoredInToken }

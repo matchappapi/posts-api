@@ -5,7 +5,8 @@ const app = new App(
   [
     new PostsController(),
   ],
-  3000,
+  3002,
+  '0.0.0.0'
 );
  
 app.listen();
